@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="grid-style1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" width="40" height="40" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Domov<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Oddelki
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Knjige</a>
+                                <a class="dropdown-item" href="#">Šolske potrebščine</a>
+                                <a class="dropdown-item" href="#">Nahrbtniki</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Celotna ponudba</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Moj račun
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Košarica</a>
+                                <a class="dropdown-item" href="#">Osebni podatki</a>
+                                <a class="dropdown-item" href="#">Moja naročila</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Odjava</a>
+                            </div>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>-->
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Išči po imenu..."
+                               aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Išči</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="banner">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <button type="button" class="btn btn-secondary" style="font-size: 1.2vw">Celotna ponudba</button>
+                        <img src="slide1.jpg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <button type="button" class="btn btn-secondary" style="font-size: 1.2vw">Knjige</button>
+                        <img src="slide2.jpg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <button type="button" class="btn btn-secondary" style="font-size: 1.2vw">Šolske potrebščine</button>
+                        <img src="slide3.jpg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="category">
+            <picture class="pic">
+                <source media="(max-width:1200px)" srcset="category-mobile.jpg">
+                <img src="category.jpg" alt="Nahrbtniki" class="cat-image">
+                <div class="img-text">NAHRBTNIKI</div>
+            </picture>
+            <!--<img src="category.jpg"
+                 alt="Nahrbtniki"
+                 srcset="category.jpg 420w,
+                         category-mobile.jpg 1000w"
+                 sizes="(min-width: 1200px) 420px">-->
+        </div>
+        <div class="product">
+            <div class="card" style="height: 300px">
+                <a href="#"><img src="backpack1.jpg" class="card-img-top" alt="Nahrbtnik">
+                    <div class="card-img-overlay">
+                        <!--<h5 class="card-title">5.99€</h5>-->
+                        <a href="#" class="btn btn-secondary">V košarico</a>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="height: 300px">
+                <a href="#"><img src="backpack2.jpg" class="card-img-top" alt="Nahrbtnik">
+                    <div class="card-img-overlay">
+                        <!-- <h5 class="card-title">5.99€</h5>-->
+                        <a href="#" class="btn btn-secondary">V košarico</a>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="height: 300px">
+                <a href="#"><img src="backpack3.jpg" class="card-img-top" alt="Nahrbtnik">
+                    <div class="card-img-overlay">
+                        <!-- <h5 class="card-title">5.99€</h5>-->
+                        <a href="#" class="btn btn-secondary">V košarico</a>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="height: 300px">
+                <a href="#"><img src="backpack4.jpg" class="card-img-top" alt="Nahrbtnik">
+                    <div class="card-img-overlay">
+                        <!-- <h5 class="card-title">5.99€</h5>-->
+                        <a href="#" class="btn btn-secondary">V košarico</a>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="height: 300px">
+                <a href="#"><img src="backpack5.jpg" class="card-img-top" alt="Nahrbtnik">
+                    <div class="card-img-overlay">
+                        <!--<h5 class="card-title">5.99€</h5>-->
+                        <a href="#" class="btn btn-secondary">V košarico</a>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="height: 300px">
+                <a href="#"><img src="backpack6.jpg" class="card-img-top" alt="Nahrbtnik">
+                    <div class="card-img-overlay">
+                        <!--<h5 class="card-title">5.99€</h5>-->
+                        <a href="#" class="btn btn-secondary">V košarico</a>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="title">
+            <p>POPUSTI</p>
+        </div>
+        <div class="sales">
+            <div class="card">
+                <a href="#"><img src="zvezek.jpg" class="card-img-top" alt="Nahrbtnik">
+                    <div class="card-body">
+                        <h5 class="card-title">Brezčrtni zvezek</h5>
+                        <p class="card-text">7,99€</p>
+                        <p class="card-text2">5,99€</p>
+                        <!--<a href="#" class="btn btn-secondary">Go somewhere</a>-->
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#"><img src="barvice.jpg" class="card-img-top" alt="Barvice">
+                    <div class="card-body">
+                        <h5 class="card-title">Komplet 24 barvic</h5>
+                        <p class="card-text">19,99€</p>
+                        <p class="card-text2">15,99€</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#"><img src="belezka.jpg" class="card-img-top" alt="Beležka">
+                    <div class="card-body">
+                        <h5 class="card-title">Beležka</h5>
+                        <p class="card-text">5,99€</p>
+                        <p class="card-text2">3,99€</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#"><img src="nalivnik.jpg" class="card-img-top" alt="Nalivnik">
+                    <div class="card-body">
+                        <h5 class="card-title">Nalivnik</h5>
+                        <p class="card-text">10,99€</p>
+                        <p class="card-text2">7,99€</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">Pogoji poslovanja</a>
+            <a href="#">Pogoji dostave</a>
+            <a href="#">Pravne informacije</a>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
